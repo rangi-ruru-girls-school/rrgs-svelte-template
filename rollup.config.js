@@ -36,14 +36,14 @@ export default {
     // locate third party modules in the node_modules folder.
     resolve(),
 
-    // if not in production then serve the app files in the public folder on http://localhost:5000
+    // if not in production then serve the files in the public folder as a web app on http://localhost:5000
     !production && serve({
       open: true,
       contentBase: 'public',
       port: 5000,
     }),
 
-    // if not in production then watch the public folder and reload the app whenever it changes.
+    // if not in production then watch the files and reload the app whenever there are any changes.
     !production && livereload('public'),
 
     // if in production then minify the JavaScript (makes your app faster).
