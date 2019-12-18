@@ -1,0 +1,20 @@
+{
+  "name": "rrgs-svelte-template",
+  "version": "1.0.0",
+  "author": "Dave Hullen",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^1.27.13",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.16.4"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
+  }
+}
