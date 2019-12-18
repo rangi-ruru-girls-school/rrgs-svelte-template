@@ -15,6 +15,6 @@
   },
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "prod": "rollup -c"
   }
 }

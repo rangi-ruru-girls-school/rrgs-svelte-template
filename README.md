@@ -36,12 +36,12 @@ npm run dev
 5. Connect your repository to [Netlify](https://netlify.com) and set it up as a new site.
 
 6. On your new site's [Netlify](https://netlify.com) page go to __Settings__ -> __Build & Deploy__ -> __Edit Settings__ and update the following settings:
-  * __Build command:__ npm run build
+  * __Build command:__ npm run prod
   * __Publish directory:__ public
 
 > Committing to [GitHub](https://github.com) means there's a copy of your project's code online. The copy includes all the changes you've made in different commits as well as the  each commit summary and description you wrote for those changes.
 
-> [Netlify](https://netlify.com) provides free hosting for sites that are saved on [GitHub](https://github.com). [Netlify](https://netlify.com) will automatically know when you push a new commit to [GitHub](https://github.com) and update your website accordingly. In this case, [Netlify](https://netlify.com) needs to build your website from your source code each time, and know where to put the result. This step is similar to `npm run dev` that you do on your own laptop, but it excludes some of the debugging features and the rebuilding/refreshing behaviour. Excluding those parts makes your app faster and more responsive for users.
+> [Netlify](https://netlify.com) provides free hosting for sites that are saved on [GitHub](https://github.com). [Netlify](https://netlify.com) will automatically know when you push a new commit to [GitHub](https://github.com) and update your website accordingly. In this case, [Netlify](https://netlify.com) needs to build your website from your source code each time, and know where to put the resulting output files. This step is similar to `npm run dev` that you do on your own laptop, but it's a _prodsuction_ version and excludes some of the debugging features and the rebuilding/refreshing behaviour. Excluding those parts makes your app faster and more responsive for users.
 
 ## Get coding
 
@@ -67,7 +67,7 @@ Use the [Svelte tutorial](https://svelte.dev/tutorial), [Svelte documentation pa
   }
 ```
 
-2. Save __index.svelte__ and your changes should show in the browser when you run `npm run build`.
+2. Save __index.svelte__ and your changes should show in the browser when you run `npm run dev`.
 
 > Every browser has their own default rules they use for displaying HTML elements, like `<h1>` and `<a>`. Resetting all the rules means that your app is more likely to display consistently in all browsers because it only uses the style rules _you_ have specified. You might notice there's an unusual piece of code there: `:global()`. This is Svelte-specific code that tells Svelte that this bit of CSS should apply to _all_ components, not just the one it's defined in.
 
@@ -81,7 +81,7 @@ Use the [Svelte tutorial](https://svelte.dev/tutorial), [Svelte documentation pa
 <link rel="stylesheet" href="bulma.css">
 ```
 
-3. Save __index.htm__ and your changes should show in the browser when you run `npm run build`.
+3. Save __index.htm__ and your changes should show in the browser when you run `npm run dev`.
 
 > The __public__ folder stores the final files that will be presented to the user and you can include files there and add them to __index.htm__ if you need to, but you should do this sparingly. Your written code should be in the __src__ folder as much as possible and when to use each folder will become clearer to you the more projects you complete.
 
