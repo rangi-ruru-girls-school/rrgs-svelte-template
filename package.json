@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "author": "Dave Hullen",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "rollup": "^1.27.13",
     "rollup-plugin-livereload": "^1.0.4",

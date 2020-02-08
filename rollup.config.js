@@ -30,7 +30,7 @@ export default {
       // create a separate file for all the CSS (makes your app faster).
       css: css => {
         css.write('public/bundle.css')
-      },
+      }
     }),
 
     // locate third party modules in the node_modules folder.
