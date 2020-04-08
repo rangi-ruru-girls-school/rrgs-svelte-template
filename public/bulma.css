@@ -4470,7 +4470,6 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 
 .is-inline.input, .is-inline.textarea {
   display: inline;
-  width: auto;
 }
 
 .input.is-rounded {
@@ -6340,6 +6339,7 @@ a.list-item {
   max-height: calc(100vh - 40px);
   overflow: hidden;
   -ms-overflow-y: visible;
+  overflow-y: visible;
 }
 
 .modal-card-head,
@@ -10829,4 +10829,3 @@ label.panel-block:hover {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
 }
-/*# sourceMappingURL=bulma.css.map */

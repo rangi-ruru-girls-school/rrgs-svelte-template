@@ -1,5 +1,6 @@
 import svelte from 'rollup-plugin-svelte'
-import resolve from 'rollup-plugin-node-resolve'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
@@ -35,6 +36,9 @@ export default {
 
     // locate third party modules in the node_modules folder.
     resolve(),
+
+    // convert older modules to new JavaScript so they can be included.
+    commonjs(),
 
     // if not in production then serve the files in the public folder as a web app on http://localhost:5000
     !production && serve({
